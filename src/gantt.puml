@@ -1,0 +1,19 @@
+@startgantt
+language ja
+saturday are colored in LightGray
+sunday   are colored in LightGray
+' saturday are closed
+' sunday   are closed
+
+' Gantt aliases work differently from other diagrams (it is not possible to give the same "label" to a task)
+' https://forum.plantuml.net/12176/gantt-aliases-differently-other-diagrams-possible-same-label
+!define N(x,n) x<size:0>n</size>
+Project starts 2024-01-22
+[N(T,1)] starts 2024-01-22 and requires 5 day
+[N(T,2)] starts 2024-01-22 and requires 5 day
+[N(T,3)] happens 2024-01-22
+
+[T1] starts 2024-01-22 and requires 5 day
+[T2] starts 2024-01-22 and requires 5 day
+[T3] happens 2024-01-22
+@endgantt
